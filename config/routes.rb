@@ -1,5 +1,9 @@
 Quora::Application.routes.draw do
   
+  get "students/index"
+
+  get "students/create"
+
   # -- 用户登录认证相关 --
   root :to=>"index#index"
   get  '/login'  => 'sessions#new'
