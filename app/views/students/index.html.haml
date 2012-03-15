@@ -1,3 +1,4 @@
 =button_to '生成通知', students_path, :remote => true
 
-<p id="mm">dd</p>
+%div#mm
+  =render 'students/parts/list', :notifications => @notifications
