@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120315014458) do
+ActiveRecord::Schema.define(:version => 20120315071713) do
 
   create_table "answer_votes", :force => true do |t|
     t.integer  "user_id"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(:version => 20120315014458) do
 
   create_table "notifications", :force => true do |t|
     t.integer  "user_id"
-    t.string   "category"
+    t.string   "kind"
     t.text     "data"
     t.boolean  "is_read",    :default => false
     t.datetime "created_at"

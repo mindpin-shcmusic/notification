@@ -8,7 +8,7 @@ class NotificationsController < ApplicationController
   def create
     Notification.create(
       :user_id => current_user.id,
-      :category => 'be_answered',
+      :kind => 'be_answered',
       :data => Notification.count + 1
     )
     @notifications = Notification.all
