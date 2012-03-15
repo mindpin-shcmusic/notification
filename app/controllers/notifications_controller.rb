@@ -16,8 +16,7 @@ class NotificationsController < ApplicationController
   
   def show
     @notification = Notification.find(params[:id])
-    @notification.is_read = true
-    @notification.save
+    @notification.set_readed
     
     return redirect_to :back
   end
