@@ -21,5 +21,12 @@ class NotificationsController < ApplicationController
     
     return redirect_to :back
   end
+  
+  def destroy
+    notification = Notification.find(params[:id])
+    notification.destroy
+    
+    return redirect_to :back
+  end
 
 end
