@@ -1,4 +1,4 @@
-class StudentsController < ApplicationController
+class NotificationsController < ApplicationController
   respond_to :html, :js
   
   def index
